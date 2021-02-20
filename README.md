@@ -1,1 +1,1 @@
-# This repo contains Linda's portfolio and SPS projects.
+# This repo contains Linda's portfolio and SPS projects!
