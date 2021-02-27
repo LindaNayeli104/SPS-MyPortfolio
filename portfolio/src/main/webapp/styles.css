@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  background-image: url(./assets/FotoByN_H.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  width: 100%;
+  background-color: #949494;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  position: absolute;
+  align-self: center;
+  font-weight: inherit;
+}
+
+.aboutMe {
+  height: 450px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: black;
+}
+
+.aboutMe-text {
+  grid-column: 2;
+  font-size: 20px;
+  text-align: right;
+  line-height: 35px;
+  margin: 100px 80px 100px 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.quotes {
+  height: 400px;
+}
+
+/* -----------------------------------------portfolio*/
+.portfolio,
+.funFacts {
+  padding: 20px;
+  background-color: black;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.container-title {
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.containerFacts-title {
+  font-size: 50px;
+  margin-top: 50px;
+  color: white;
+}
+
+.project,
+.facts {
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description,
+.facts-description {
+  font-size: 20px;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-details,
+.facts-details {
+  width: 500px;
+}
+
+.project-imageContainer,
+.facts-imageContainer {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.quote {
+  background-color: black;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  color: white;
+}
+
+.quote-text {
+  font-size: 70px;
+}
+
+/*------------------------------------------------- Contact */
+
+.social {
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+  color: white;
+}
+
+.social-link.linkedin {
+  background-image: url("../assets/linkedin.png");
+}
+.social-link.github {
+  background-image: url("../assets/github.svg");
+}
+.social-link.resume {
+  background-image: url("../assets/resume.png");
+  color: white;
+}
