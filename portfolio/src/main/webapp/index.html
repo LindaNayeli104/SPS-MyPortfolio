@@ -1,19 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linda Abundis</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+    <section class="hero">
+      <h1 class="hero-title">Call me Linda</h1>
+    </section>
+
+    <section class="aboutMe">
+      <div class="aboutMe-text">
+        <p>
+          Computer Systems Engineering student at Tecnológico de Monterrey,
+          Guadalajara campus.<br />
+          Software Engineer Web Intern at Accedo.tv, a streaming platform
+          company. <br />
+          I love to continually learn and apply my knowledge. <br />
+          I have always thought that with effort, creativity and <br />
+          vision we can turn nothing into something!
+        </p>
+      </div>
+    </section>
+
+    <section class="portflio">
+      <div class="container">
+        <h2 class="container-title">Main projects</h2>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">esperoverte.com</h3>
+            <h5 class="project-languages">HTML / CSS</h5>
+            <p class="project-date">
+              <small><strong>Date:</strong> November 2020</small>
+            </p>
+            <p class="project-url">
+              <small><strong>Find it in:</strong> esperoverte.com</small>
+            </p>
+            <p class="project-description">
+              Associated with a colleague, we created a web application of
+              digital invitations for social events. Where the guests can access
+              event information, countdown to the date and time of the event,
+              photo gallery, see the location of the event on Google Maps and
+              confirm their attendance through WhatsApp. I worked on the second
+              half of the app. I made the connection with the WhatsApp API. I
+              used HTML to give structure and content to the interface and CSS
+              to style it.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              width="400"
+              src="./assets/esperoverte.jpeg"
+              alt="Project image"
+            />
+          </figure>
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">TechGirls Web App</h3>
+            <h5 class="project-languages">HTML / CSS / JavaScript</h5>
+            <p class="project-date">
+              <small><strong>Date:</strong> April 2020</small>
+            </p>
+            <p class="project-description">
+              Developed with 1 colleague a web application for TechGirls Mexico,
+              group of women that make a week camp with the purpose of increase
+              the number of girls in STEMcareers. The web app has the objective
+              of show all the content and help the instructors during the camp.
+              I programed the interfaces of the first three days of the week
+              activities. I used HTMLand CSSfor the frontendand JavaScriptfor
+              the backend programming.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img width="400" src="./assets/techGirls.jpg" alt="Project image" />
+          </figure>
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Contalytics (HACKATTACK IBM 2019)</h3>
+            <h5 class="project-languages">Pytorch / Matplotlib</h5>
+            <p class="project-date">
+              <small><strong>Date:</strong> October 2019</small>
+            </p>
+            <p class="project-description">
+              Implemented in a team of two a linear regression to analyze and
+              predict stock performance and help the IBM production area develop
+              a platform for storage control, making it efficient and avoiding
+              any loss of material. I clean one of the data sets by completing
+              data, dedupling and filtering the columns we needed. Finally,I
+              used Pytorch to make the linear regression and utilized Matplotlib
+              to graph the results.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img width="400" src="./assets/ibm.png" alt="Project image" />
+          </figure>
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">
+              Teotihuacan Brewery Sales Forecast (HackMTY 2019)
+            </h3>
+            <h5 class="project-languages">Python</h5>
+            <p class="project-date">
+              <small><strong>Date:</strong> August 2019</small>
+            </p>
+            <p class="project-description">
+              I worked in a team of two cleaning and interpreting 10,000,000
+              data from the three-month sales records of a national brewery to
+              predict sales trends for the next few months.I learned about the
+              data cleansing process using Python.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img width="400" src="./assets/hm.png" alt="Project image" />
+          </figure>
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">
+              BeMyGuide (Hackathon in Monterrey, Mexico2018)
+            </h3>
+            <h5 class="project-languages">React / JavaScript</h5>
+            <p class="project-date">
+              <small><strong>Date:</strong> August 2018</small>
+            </p>
+            <p class="project-description">
+              Developed by a team of 4 a React web platform to connect
+              professionals with students. I coded the front-end log in page.
+              The tools I used were React and JavaScript.It was my first
+              Hackathon!
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img width="400" src="./assets/hm.png" alt="Project image" />
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="funFacts">
+      <div class="container">
+        <h2 class="containerFacts-title">Fun facts</h2>
+
+        <article class="facts">
+          <div class="facts-details">
+            <ol class="facts-description">
+              <ul>
+                I really love to travel, one of my dreams is to visit the Seven
+                Wonders of the World.
+              </ul>
+              <ul>
+                I love walks, especially if they lead to some surprising place.
+              </ul>
+
+              <ul>
+                I really enjoy food, especially if I share it with the people I
+                love.
+              </ul>
+
+              <ul>
+                I like stories, whether in books, movies, series or in talks.
+                I'm amazed at how much we can learn from them.
+              </ul>
+            </ol>
+          </div>
+          <figure class="facts-imageContainer">
+            <img width="400" src="./assets/trip.jpeg" alt="Project image" />
+          </figure>
+        </article>
+      </div>
+    </section>
+    <section class="quote">
+      <h1 class="quote-text">"Never stop learning"</h1>
+    </section>
+
+    <section class="contact">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/linda-abundis/"
+          class="social-link linkedin"
+        ></a>
+        <a
+          href="https://github.com/LindaNayeli104"
+          class="social-link github"
+        ></a>
+        <a
+          href="https://drive.google.com/file/d/1McXVpTUGwXLNAUu2_Wk2xoV0HrKZ1ykB/view?usp=sharing"
+          class="social-link resume"
+        ></a>
+      </div>
+    </section>
   </body>
 </html>
