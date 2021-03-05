@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
-@WebServlet("/index.html")
+@WebServlet("/message")
 public class MyServletClass extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Hello world, I'm Linda!</h1>");
+    response.getWriter().println("Hello world, I'm Linda!");
   }
 }
