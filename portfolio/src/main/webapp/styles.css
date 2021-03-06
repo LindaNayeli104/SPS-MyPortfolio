@@ -170,3 +170,85 @@ figure {
   background-image: url("../assets/resume.png");
   color: white;
 }
+
+
+.formEmail-container {
+ display: flex;
+ background-color: black;
+ width: 100%;
+ justify-content: space-evenly;
+ align-items: center;
+ height:180px;
+}
+
+.formEmail-p{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.formEmail-textArea{
+    border-radius: 10px;
+    height: 40px;
+    border: solid;
+    padding: 7px 20px 5px 25px;
+    background-image: url("../assets/envelope.jpg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.formEmail-input{
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.formEmail-input:hover{
+    background-color: white;
+    color:black;
+}
+
+/*------------------------------------------------- BucketList */
+.bucketList-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.bucketList-container h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bucketList-container p{
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.bucketList-container button{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 200px;
+
+}
+
+.bucketList-container button:hover{
+  background-color: #949494;
+  color: white;
+}
+
+#message-container{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
