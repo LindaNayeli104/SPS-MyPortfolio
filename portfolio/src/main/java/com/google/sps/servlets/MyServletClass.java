@@ -1,5 +1,4 @@
 package com.google.sps.servlets;
-
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,15 +14,12 @@ public class MyServletClass extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     String[] bucketListTrips = {"India", "Italy", "Thailand"};
 
-    
-
     // Convert the server stats to JSON
     String json = convertToJsonUsingGson(bucketListTrips);
 
     // Send the JSON as the response
     response.setContentType("application/json;");
     response.getWriter().println(json);
-    
   }
 
   private String convertToJsonUsingGson(String[] bucketListTrips) {
