@@ -172,33 +172,45 @@ figure {
 }
 
 
-.formEmail-container {
+.formInfo-container {
  display: flex;
  background-color: black;
  width: 100%;
  justify-content: space-evenly;
  align-items: center;
- height:180px;
+ height: 280px;
 }
 
-.formEmail-p{
+.formInfo-p{
     color: white;
     margin-bottom: 15px;
 }
 
-.formEmail-textArea{
+.formEmail-textArea, .formName-textArea, .formMessage-textArea{
     border-radius: 10px;
     height: 40px;
     border: solid;
     padding: 7px 20px 5px 25px;
-    background-image: url("../assets/envelope.jpg");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
 }
 
-.formEmail-input{
+.formEmail-textArea{
+    background-image: url("../assets/envelope.jpg");
+}
+
+.formName-textArea{
+    background-image: url("../assets/user.png");
+}
+
+.formMessage-textArea{
+    height: 80px;
+}
+
+
+.formInfo-input{
     background: transparent;
     color: white;
     padding: 10px 0;
@@ -208,7 +220,7 @@ figure {
     margin-left: 3px;
 }
 
-.formEmail-input:hover{
+.formInfo-input:hover{
     background-color: white;
     color:black;
 }

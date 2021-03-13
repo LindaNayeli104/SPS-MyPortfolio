@@ -202,14 +202,20 @@
    
 
     <section class="contact">
-        <div class="formEmail-container">  
-            <div class="formEmail">
+        <div class="formInfo-container">  
+            <div class="formInfo">
                 <form action="/form-handler" method="POST">
-                    <p class="formEmail-p">Let's create something together</p>
-                    <textarea class="formEmail-textArea" name="text-input" placeholder="Leave me your email"></textarea>
+                    <p class="formInfo-p">Let's create something together</p>
+                    <textarea class="formName-textArea" name="nameText-input" placeholder="Leave me your name"></textarea>
                     <br/>
-                    <input class="formEmail-input" type="submit" />
+                    <textarea class="formEmail-textArea" name="emailText-input" placeholder="Leave me your email"></textarea>
+                    <br/>
+                    <textarea class="formMessage-textArea" name="messageText-input" placeholder="Leave me your message"></textarea>
+                    <br/>
+                    <input class="formInfo-input" type="submit" />
+                    
                 </form>
+                 <button class="" onclick="loadUsers()"> Loading users </button>
             </div>
             
             <div class="social">
@@ -228,7 +234,11 @@
             </div>
         </div>
     </section>
+
+    <ul id="users-list">
+    </ul>
     
     <script src="./message.js"></script> 
+    <script src="./script.js"></script> 
   </body>
 </html>
