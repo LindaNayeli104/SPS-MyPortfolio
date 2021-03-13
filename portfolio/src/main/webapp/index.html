@@ -192,7 +192,7 @@
         <div class="bucketList-container">
             <h1>Bucket list Trips</h1>
             <p>Click this button to discover one of them</p>
-            <button class="" onclick="showServerMessage();">
+            <button class="whiteButton" onclick="showServerMessage();">
                 Get places
             </button>
             <ul id="message-container"></ul>  
@@ -215,7 +215,7 @@
                     <input class="formInfo-input" type="submit" />
                     
                 </form>
-                 <button class="" onclick="loadUsers()"> Loading users </button>
+                 
             </div>
             
             <div class="social">
@@ -234,9 +234,16 @@
             </div>
         </div>
     </section>
-
-    <ul id="users-list">
-    </ul>
+    <section class="usersNameList">
+        <div class="usersNameList-container">
+            <h1>Users who left messages</h1>
+            <ul class="nameList" id="users-list"></ul>
+        </div>  
+        <div class="usersNameList-container">
+            <button class="whiteButton" onclick="loadUsers()"> View users </button>
+        </div>  
+    </section>
+    
     
     <script src="./message.js"></script> 
     <script src="./script.js"></script> 

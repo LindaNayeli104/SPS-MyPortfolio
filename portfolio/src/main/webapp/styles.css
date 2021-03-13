@@ -178,7 +178,7 @@ figure {
  width: 100%;
  justify-content: space-evenly;
  align-items: center;
- height: 280px;
+ height: 330px;
 }
 
 .formInfo-p{
@@ -255,7 +255,7 @@ figure {
 
 }
 
-.bucketList-container button:hover{
+.whiteButton:hover{
   background-color: #949494;
   color: white;
 }
@@ -264,3 +264,35 @@ figure {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
+/*------------------------------------------------- usersNameList */
+.usersNameList{
+    background-color: white;
+}
+
+.usersNameList-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 10px;
+}
+
+
+.usersNameList-container h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.usersNameList-container button{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 200px;
+    color:black;
+    margin-top: 25px;
+}
+
