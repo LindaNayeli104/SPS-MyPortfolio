@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,18 +12,25 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+/** Fetches tasks from the server and adds them to the DOM. */
+function loadUsers() {
+  fetch('/list-users').then(response => response.json()).then((users) => {
+    const userListElement = document.getElementById('users-list');
+    users.forEach((user) => {
+      userListElement.appendChild(createUserElement(user));
+    })
+  });
 }
+
+/** Creates an element that represents a user */
+function createUserElement(user) {
+  const userElement = document.createElement('li');
+  userElement.className = 'user';
+
+  const nameElement = document.createElement('span');
+  nameElement.innerText = user.name;    
+  
+  userElement.appendChild(nameElement);
+  return userElement;
+}
+

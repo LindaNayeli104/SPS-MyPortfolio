@@ -170,3 +170,133 @@ figure {
   background-image: url("../assets/resume.png");
   color: white;
 }
+
+
+.formInfo-container {
+ display: flex;
+ background-color: black;
+ width: 100%;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 330px;
+}
+
+.formInfo-p{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.formEmail-textArea, .formName-textArea, .formMessage-textArea{
+    border-radius: 10px;
+    height: 40px;
+    border: solid;
+    padding: 7px 20px 5px 25px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.formEmail-textArea{
+    background-image: url("../assets/envelope.jpg");
+}
+
+.formName-textArea{
+    background-image: url("../assets/user.png");
+}
+
+.formMessage-textArea{
+    height: 80px;
+}
+
+
+.formInfo-input{
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.formInfo-input:hover{
+    background-color: white;
+    color:black;
+}
+
+/*------------------------------------------------- BucketList */
+.bucketList-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.bucketList-container h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bucketList-container p{
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.bucketList-container button{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 200px;
+
+}
+
+.whiteButton:hover{
+  background-color: #949494;
+  color: white;
+}
+
+#message-container{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------- usersNameList */
+.usersNameList{
+    background-color: white;
+}
+
+.usersNameList-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 10px;
+}
+
+.user{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.usersNameList-container h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.usersNameList-container button{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 200px;
+    color:black;
+    margin-top: 25px;
+}
+

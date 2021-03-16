@@ -188,39 +188,64 @@
       <h1 class="quote-text">"Never stop learning"</h1>
     </section>
 
-    <section class="contact">
-      <div class="social">
-        <a
-          href="https://www.linkedin.com/in/linda-abundis/"
-          class="social-link linkedin"
-        ></a>
-        <a
-          href="https://github.com/LindaNayeli104"
-          class="social-link github"
-        ></a>
-        <a
-          href="https://drive.google.com/file/d/1McXVpTUGwXLNAUu2_Wk2xoV0HrKZ1ykB/view?usp=sharing"
-          class="social-link resume"
-        ></a>
-      </div>
+    <section class="bucketList">
+        <div class="bucketList-container">
+            <h1>Bucket list Trips</h1>
+            <p>Click this button to discover one of them</p>
+            <button class="whiteButton" onclick="showServerMessage();">
+                Get places
+            </button>
+            <ul id="message-container"></ul>  
+        </div>
     </section>
-    <div class="bucketList">
-       <h1>Bucket list Trips</h1>
-        <p>Click this button to discover one of them</p>
-        <button onclick="showServerMessage();">
-        Get places
-        </button>
-        <ul id="message-container"></ul>
-        <script src="./message.js"></script> 
-    </div>
 
-    <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
-        <br/>
-        <input type="submit" />
-    </form>
-    
    
+
+    <section class="contact">
+        <div class="formInfo-container">  
+            <div class="formInfo">
+                <form action="/form-handler" method="POST">
+                    <p class="formInfo-p">Let's create something together</p>
+                    <textarea class="formName-textArea" name="nameText-input" placeholder="Leave me your name"></textarea>
+                    <br/>
+                    <textarea class="formEmail-textArea" name="emailText-input" placeholder="Leave me your email"></textarea>
+                    <br/>
+                    <textarea class="formMessage-textArea" name="messageText-input" placeholder="Leave me your message"></textarea>
+                    <br/>
+                    <input class="formInfo-input" type="submit" />
+                    
+                </form>
+                 
+            </div>
+            
+            <div class="social">
+                <a
+                href="https://www.linkedin.com/in/linda-abundis/"
+                class="social-link linkedin"
+                ></a>
+                <a
+                href="https://github.com/LindaNayeli104"
+                class="social-link github"
+                ></a>
+                <a
+                href="https://drive.google.com/file/d/1McXVpTUGwXLNAUu2_Wk2xoV0HrKZ1ykB/view?usp=sharing"
+                class="social-link resume"
+                ></a>
+            </div>
+        </div>
+    </section>
+    <section class="usersNameList">
+        <div class="usersNameList-container">
+            <h1>Users who left messages</h1>
+            <ul class="nameList" id="users-list"></ul>
+        </div>  
+        <div class="usersNameList-container">
+            <button class="whiteButton" onclick="loadUsers()"> View users </button>
+        </div>  
+    </section>
+    
+    
+    <script src="./message.js"></script> 
+    <script src="./script.js"></script> 
   </body>
 </html>
