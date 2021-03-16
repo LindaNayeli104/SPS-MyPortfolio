@@ -90,6 +90,7 @@
 .project-url {
   margin: 10px 0;
 }
+
 .project-description,
 .facts-description {
   font-size: 20px;
@@ -151,6 +152,7 @@ figure {
   padding-bottom: 20px;
   padding-right: 40px;
 }
+
 .social-link {
   display: inline-block;
   width: 50px;
@@ -163,14 +165,15 @@ figure {
 .social-link.linkedin {
   background-image: url("../assets/linkedin.png");
 }
+
 .social-link.github {
   background-image: url("../assets/github.svg");
 }
+
 .social-link.resume {
   background-image: url("../assets/resume.png");
   color: white;
 }
-
 
 .formInfo-container {
  display: flex;
@@ -209,7 +212,6 @@ figure {
     height: 80px;
 }
 
-
 .formInfo-input{
     background: transparent;
     color: white;
@@ -241,7 +243,6 @@ figure {
 
 .bucketList-container p{
     font-size: 30px;
-
     margin-bottom: 20px;
 }
 
@@ -252,7 +253,6 @@ figure {
     padding: 10px 0;
     border-radius: 5px;
     width: 200px;
-
 }
 
 .whiteButton:hover{
